@@ -1,8 +1,24 @@
-p {
-    text-align: center;
-  }
 
-body {
-text-align: center;
+.piano {
+  display: flex;
 }
 
+.white-key {
+  width: 23px;
+  height: 120px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.black-key {
+  width: 15px;
+  height: 80px;
+  background-color: black;
+  margin-left: -8px;
+}
+
+
+.image-container {
+  padding-right: 50px; /* Adjust the value as needed */
+  display: inline-block; /* Ensure the container fits the image width */
+}

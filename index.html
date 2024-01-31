@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html>
-<meta charset="ISO-8859-1"> 
 
 <head>
     <title>VEFF 2024 Assignment 1</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
-    <label for="tune">Tune:</label>   
-    <select name="tune" id="tune"> 
-        <option value="F&uuml;r Elise">F&uuml;r Elise</option> 
-        <option value="The Godfather">The Godfather</option> 
-        <option value="Seven Nation Army">Seven Nation Army</option> 
-    </select>
+    <div id="controls">
+        <label for="tune">Tune:</label>
+        <select id="tune">
+            <option value="furElise">F&uuml;r Elise</option>
+            <option value="theGodFather">The Godfather</option>
+            <option value="sevenNationArmy">Seven Nation Army</option>
+        </select>
+        <div class="image-container">
+            <button id="play"> <img src="material/play.png" alt="play"></button>
+        </div>
+        
+        <label for="record">Record:</label>
+        <button id="record"><img src="material/record.png" alt="rec"></button>
+        <button id="stop"><img src="material/stop.png" alt="stop"></button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="piano">
+       <!--hér þarf að setja inn piano-->
+       <div class="white-key"></div>
+       <div class="black-key"></div>
+       <div class="white-key"></div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+    <div id="controls">
+        <label for="tune">Tune:</label>
+        <select id="tune">
+            <option value="furElise">Für Elise</option>
+            <!-- Add more options as needed -->
+        </select>
+        <button id="play">Play</button>
+
+        <label for="record">Record:</label>
+        <button id="record">Record</button>
+        <button id="stop">Stop</button>
+    </div>
+
+    <div id="piano">
+        <!-- Add your piano keys here -->
+        <div class="key white" data-note="C4" data-key="a">C4 (a)</div>
+        <div class="key black" data-note="C#4" data-key="w">C#4 (w)</div>
+        <!-- Repeat for all keys -->
+    </div>
+</body>
+</html>
