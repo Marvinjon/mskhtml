@@ -1,28 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Virtual Piano</title>
-    <link rel="stylesheet" href="styles.css">
-</head> 
-<body>
-    <div id="controls">
-        <label for="tune">Tune:</label>
-        <select id="tune">
-            <option value="furElise">Für Elise</option>
-            <!-- Add more options as needed -->
-        </select>
-        <button id="play">Play</button>
-
-        <label for="record">Record:</label>
-        <button id="record">Record</button>
-        <button id="stop">Stop</button>
+<!doctype html>
+<html lang="en">
+  <head>
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Piano</title>
+    <link rel="stylesheet" href="styleTest.css">
+  </head>
+  <body>
+    <div class="keyboard-container">
+      <div class="naturals-container">
+        <button><p>C</p></button>
+        <button><p>D</p></button>
+        <button><p>E</p></button>
+        <button><p>F</p></button>
+        <button><p>G</p></button>
+        <button><p>A</p></button>
+        <button><p>B</p></button>
+      </div>
+      <div class="accidentals-container">
+        <button class="C">C</button>
+        <button class="D">D</button>
+        <button class="F">F</button>
+        <button class="G">G</button>
+        <button class="A">A</button>
+      </div>
     </div>
-
-    <div id="piano">
-        <!-- Add your piano keys here -->
-        <div class="key white" data-note="C4" data-key="a">C4 (a)</div>
-        <div class="key black" data-note="C#4" data-key="w">C#4 (w)</div>
-        <!-- Repeat for all keys -->
-    </div>
-</body>
+  </body>
 </html>
