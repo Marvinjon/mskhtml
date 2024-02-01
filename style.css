@@ -19,8 +19,8 @@
 
 
 .image-container {
-  padding-right: 50px; /* Adjust the value as needed */
-  display: inline-block; /* Ensure the container fits the image width */
+  padding-right: 50px; 
+  display: inline-block;
 }
 
 body {
@@ -41,6 +41,16 @@ body {
     height: 66%;
   justify-items: center;
 }
+
+.control-container{
+  width: 100px;
+  display: grid;
+  height: 5px;
+  justify-content: center;
+  justify-items: center;
+}
+
+
 
 .accidentals-container button {
   width: 58px;
