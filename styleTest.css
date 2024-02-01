@@ -1,82 +1,77 @@
+
+
 body {
-    background: #ffffff;
-  }
+    background-color: #ffffff;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.piano {
+    display: flex;
+    margin-top: 0;
+    position: relative;
+    top: -50px;
+}
+
+.key {
+    height: calc(var(--width)*4);
+    width: var(--width);
+}
+
+.white {
+    --width: 70px;
+    background-color: white;
+    border: 1px solid #000000;
+
+}
+
+.black {
+    --width: 45px;
+    background-color: black;
+    margin-left: calc(var(--width)/-2);
+    margin-right: calc(var(--width)/-2);
+    z-index: 2;
   
-  .keyboard-container {
-    width: 960px;
-    height: 300px;
-    margin: 0 auto;
-   
-  }
-  
-  .accidentals-container {
-    width: 960px;
-    display: grid;
-    grid-template-columns: repeat(42, 1fr);
-      height: 66%;
-    justify-items: center;
-  }
-  
-  .accidentals-container button {
-    width: 58px;
-      background: #1b1b1e;
-      border: 1px solid #fff;
-      border-radius: 0 0 4px 4px;
-      cursor: pointer;
-      top: -299px;
-      position: relative;
-      z-index: 1;
-      border-top: none;
-  }
-  
-  
-  .accidentals-container button.C {
-    grid-column: 6 / span 2;
-  }
-  
-  .accidentals-container button.D {
-    grid-column: 12 / span 3;
-  }
-  
-  .accidentals-container button.F {
-    grid-column: 25 / span 2;
-  }
-  
-  .accidentals-container button.G {
-    grid-column: 31 / span 2;
-  }
-  
-  .accidentals-container button.A {
-    grid-column: 37 / span 1;
-  }
-  
-  
-  .naturals-container {
-    width: 960px;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    height: 300px;
-  }
-  
-  .naturals-container button {
-    background: #fff;
-    border: 1px solid #1b1b1e;
-    border-radius: 0 0 6px 6px;
-  }
-  
-  button {
-        cursor: pointer;
-  }
-  
-  button:active, button:focus {
-      border: 3px solid #4fb7ec;
-      outline: rgba(225, 225, 225, 0);
-    }
-  
-  .naturals-container p {
-    font-size: 1.75em;
-        top: 100px;
-      position: relative;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, .9), 0 -1px 1px rgba(0, 0, 0, .1);
-    color: #1b1b1e;
-  }
+}
+
+h3 {
+    text-align: center;
+    top: 50%;
+    position: relative;
+}
+
+.key.black {
+    color: white;
+    text-align: center;
+}
+
+.key.white p {
+    position: relative;
+    top: 60%;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.key.white h3 {
+    top: 60%;
+    font-size: x-large;
+}
+
+.key.black p {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+body h1 {
+    flex: 0 0 100%;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 0 0 black;
+}

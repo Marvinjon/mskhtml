@@ -1,0 +1,52 @@
+body {
+    background-color: #ffffff;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  
+  .control-container{
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+.white {
+    position: relative;
+    background-color: #ffffff;
+    width: 10%;
+    height: 100px;
+    margin: 0 1px;
+    border: 1px solid #000000;
+  }
+  
+.white.black:after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    right: -25%;
+    width: 50%;
+    height: 90%;
+    z-index: 1;
+ }
+
+ .image-inside-button {
+    width: 150%;
+    height: 100%;
+  }
+  
+  #play, #record, #stop {
+    width: 20px;  
+    height: 20px; 
+}
+
