@@ -10,11 +10,14 @@ body {
 }
 .piano {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
 }
 
+
 .white-key {
-  width: 46px;
+  width: 30px;
   height: 80px;
   background-color: #FFF;
   border: 1px solid #646464; 
@@ -27,12 +30,12 @@ body {
 }
 
 .black-key {
-  width: 25px;
+  width: 18px;
   height: 50px;
-  background-color: #000000;
+  background-color: black;
   border: 0.1px solid rgb(77, 70, 70);
   margin-left: -6px;
-  font-size: 10px;
+  font-size: 8px;
   z-index: 2;
   position: absolute;
   text-align: center;
@@ -40,6 +43,13 @@ body {
 
 .white-text {
   color: white;
+  text-align: center;
+
+}
+
+.black-text {
+  color: black;
+  font-size: 7.5px;
 }
 
 #b1{
@@ -65,7 +75,7 @@ body {
 }
 
 .image-inside-button {
-  width: 250%;
+  width: 150%;
   height: 100%;
 }
 
