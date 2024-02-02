@@ -9,15 +9,14 @@ body {
   text-align: center;
 }
 .piano {
-  display: flex;
   position: relative;
 }
 
 .white-key {
-  width: 40px;
-  height: 80px;
+  width: 10%;
+  height: 60px;
   background-color: #FFF;
-  border: 1px solid #808080; 
+  border: solid #000000; 
   margin-left: -4px;
 
 }
@@ -27,49 +26,40 @@ body {
 }
 
 .black-key {
-  position: absolute;
-  width: 24px;
-  height: 50px;
+  width: 30px;
+  height: 40px;
   background-color: #000000;
-  border: 1px solid #808080; 
-  border-radius: 0 0 2px 2px;
+  border: solid rgb(77, 70, 70);
+  margin-left: -4px;
+  font-size: 10px;
+  z-index: 2;
+  position: absolute;
 }
-
-.black-key.active {
-  background-image: linear-gradient(#000000, #101010);
-}
-
 
 .white-text {
   color: white;
 }
 
-.Db4-key {
-  left: 22px;
+#b1{
+  left: 8%
+}  
+#b2{
+  left: 18%
 }
-
-.Eb4-key {
-  left: 58px;
+#b3{
+  left: 38%
 }
-
-.Gb4-key {
-  left: 130px;
+#b4{
+  left: 48%
 }
-
-.Ab4-key {
-  left: 166px;
+#b5{
+  left: 58%
 }
-
-.Bb4-key {
-  left: 202px;
+#b6{
+  left: 78%
 }
-
-.Db5-key {
-  left: 274px;
-}
-
-.Eb5-key {
-  left: 310px;
+#b7{
+  left: 88%
 }
 
 .image-inside-button {
