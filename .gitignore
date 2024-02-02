@@ -193,3 +193,4 @@ node_modules/vite/types/metadata.d.ts
 node_modules/vite/types/package.json
 package.json
 package-lock.json
+.DS_store
