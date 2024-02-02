@@ -72,3 +72,17 @@ body {
   width: 20px;  
   height: 20px; 
 }
+
+.error-screen {
+  display: none; 
+}
+
+@media screen and (max-width: 599px) {
+  .piano-container {
+    display: none;
+  }
+
+  .error-screen {
+    display: block; 
+  }
+}
