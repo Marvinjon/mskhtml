@@ -1,19 +1,20 @@
 body {
   background-color: #ffffff;
-  padding-left: 150px;
-  padding-right: 150px;
+
 }
+
 
 .control-container{
   color: rgb(0, 0, 0);
   text-align: center;
 }
 .piano {
-  position: relative;
+  position: absolute;
+  text-align: center;
 }
 
 .white-key {
-  width: 10%;
+  width: 59px;
   height: 60px;
   background-color: #FFF;
   border: 1px solid #646464; 
@@ -41,7 +42,7 @@ body {
 }
 
 #b1{
-  left: 8%
+  left: 6%
 }  
 #b2{
   left: 18%
@@ -70,4 +71,8 @@ body {
 #play, #record, #stop {
   width: 20px;  
   height: 20px; 
+}
+
+#recordpad {
+  padding-left: 5%;
 }
