@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>VEFF 2024 Assignment 1</title>
-    <link rel="stylesheet" href="style.css">
+	<title>Simple Piano Site</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
-
-
 <body>
-    <div class="control-container" id="controls">
-        <label for="tune">Tune:</label>
-        <select id="tune">
-            <option value="furElise">F&uuml;r Elise</option>
-            <option value="theGodFather">The Godfather</option>
-            <option value="sevenNationArmy">Seven Nation Army</option>
-        </select>
-        <div class="image-container">
-            <button id="play"> <img src="material/play.png" alt="play"></button>
-        </div>
-        
-        <label for="record">Record:</label>
-        <button id="record"><img src="material/record.png" alt="rec"></button>
-        <button id="stop"><img src="material/stop.png" alt="stop"></button>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div class="keyboard-container">
-        <div class="naturals-container">
-          <button><p>C4</p></button>
-          <button><p>D</p></button>
-          <button><p>E</p></button>
-          <button><p>F</p></button>
-          <button><p>G</p></button>
-          <button><p>A</p></button>
-          <button><p>B</p></button>
-        </div>
-        <div class="accidentals-container">
-          <button class="C">C</button>
-          <button class="D">D</button>
-          <button class="F">F</button>
-          <button class="G">G</button>
-          <button class="A">A</button>
-        </div>
-      </div>
+	<p>
+        <div class="control-container" id="controls">
+            <label for="tune">Tune:</label>
+            <select id="tune">
+              <option value="furElise">Für Elise</option>
+              <option value="theGodFather">The Godfather</option>
+              <option value="sevenNationArmy">Seven Nation Army</option>
+            </select>
+          
+            <button id="play">
+              <img src="material/play.png" alt="play-img" class="image-inside-button">
+            </button>
+            <label for="record">Record:</label>
+            <button id="record">
+              <img src="material/record.png" alt="rec-img" class="image-inside-button">
+            </button>
+            <button id="stop">
+              <img src="material/stop.png" alt="stop-img" class="image-inside-button">
+            </button>
+          </div>
+          
+    </p>
+    <div class="container">
+    <!-- white and black keys -->
+    <div data-note="C" class="key white black" ><h3>C</h3></div>
+    <div data-note="O" class="key white black" ><h3>O</h3></div>
+    <!-- white keys -->
+    <div data-note="D" class="key white" ><h3>D</h3></div>
+     <!-- white and black keys -->
+    <div data-note="E" class="key white black" ><h3>E</h3></div>
+    <div data-note="S" class="key white black" ><h3>S</h3></div>
+    <div data-note="P" class="key white black" ><h3>P</h3></div>
+    <!-- white keys -->
+    <div data-note="E1" class="key white" ><h3>E</h3></div>
+     <!-- white and black keys -->
+    <div data-note="E" class="key white black" ><h3>E</h3></div>
+    <div data-note="D" class="key white black" ><h3>D</h3></div>
+    <!-- white keys -->
+    <div data-note="Y" class="key white" ><h3>Y</h3></div>
+   </div>  
 </body>
-
 </html>
