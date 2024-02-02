@@ -20,7 +20,7 @@ body {
   width: 30px;
   height: 80px;
   background-color: #FFF;
-  border: 1px solid #646464; 
+  border: 1px solid #e3e3e3; 
   margin-left: -4px;
 
 }
@@ -33,12 +33,14 @@ body {
   width: 18px;
   height: 50px;
   background-color: black;
-  border: 0.1px solid rgb(77, 70, 70);
+  border: 0.1px solid #e3e3e3;
   margin-left: -6px;
   font-size: 8px;
   z-index: 2;
-  position: absolute;
-  text-align: center;
+  position: center;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .white-text {
@@ -84,6 +86,11 @@ body {
   height: 20px; 
 }
 
+#recordpad {
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+
+
 .error-screen {
   display: none; 
 }
@@ -93,7 +100,26 @@ body {
     display: none;
   }
 
-  .error-screen {
-    display: block; 
+@media screen and (max-width: 599px) {
+  body {
+    overflow: hidden; 
   }
+
+  /* Hide all elements except the error screen */
+  body > *:not(.error-screen) {
+    display: none;
+  }
+
+  .error-screen {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; 
+    height: auto;
+    max-width: 100%;
+    max-height: 100%; 
+  }
+}
 }
