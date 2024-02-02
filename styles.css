@@ -14,8 +14,8 @@ body {
 }
 
 .white-key {
-  width: 59px;
-  height: 60px;
+  width: 46px;
+  height: 80px;
   background-color: #FFF;
   border: 1px solid #646464; 
   margin-left: -4px;
@@ -27,14 +27,15 @@ body {
 }
 
 .black-key {
-  width: 30px;
+  width: 25px;
   height: 50px;
   background-color: #000000;
   border: 0.1px solid rgb(77, 70, 70);
-  margin-left: -4px;
+  margin-left: -6px;
   font-size: 10px;
   z-index: 2;
   position: absolute;
+  text-align: center;
 }
 
 .white-text {
@@ -42,7 +43,7 @@ body {
 }
 
 #b1{
-  left: 6%
+  left: 8%
 }  
 #b2{
   left: 18%
@@ -57,10 +58,10 @@ body {
   left: 58%
 }
 #b6{
-  left: 78%
+  left: 78.5%
 }
 #b7{
-  left: 88%
+  left: 88.5%
 }
 
 .image-inside-button {
