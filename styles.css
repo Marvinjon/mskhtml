@@ -1,14 +1,17 @@
 body {
+  /* Backround color for the whole body */
   background-color: #ffffff;
 
 }
 
 
 .control-container{
+  /* Styling for the control container */
   color: rgb(0, 0, 0);
   text-align: center;
 }
 .piano {
+  
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -113,6 +116,7 @@ body {
   }
 
   .error-screen {
+      /* Styling for the error screen when the screen width is less than or equal to 599px */
     display: block;
     position: absolute;
     top: 50%;
