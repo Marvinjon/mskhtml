@@ -11,7 +11,7 @@ body {
   text-align: center;
 }
 .piano {
-  
+  /* Styling for the piano container */
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -20,6 +20,7 @@ body {
 
 
 .white-key {
+  /* Styling for the white keys */
   width: 30px;
   height: 80px;
   background-color: #FFF;
@@ -35,6 +36,8 @@ body {
 }
 
 .black-key {
+  /* Styling for the black keys */
+
   width: 18px;
   height: 50px;
   background-color: black;
@@ -47,6 +50,7 @@ body {
 }
 
 .white-text {
+  /* White text for the black keys */
   color: white;
   margin-right: 15px;
   padding-right: 15px;
@@ -54,10 +58,13 @@ body {
 }
 
 .black-text {
+  /* Styling for the black text */
   color: black;
   font-size: 7.5px;
 }
 
+
+/* Positions for each black key */
 #b1{
   left: 7.5%
 }  
@@ -82,25 +89,30 @@ body {
 }
 
 .image-inside-button {
+  /* Styling for the image inside buttons */
   width: 150%;
   height: 100%;
 }
 
 #play, #record, #stop {
+  /* Styling for play, record, and stop buttons */
   width: 20px;  
   height: 20px; 
 }
 
 #recordpad {
+  /* Styling for the record label */
   margin-left: 20px; /* Adjust the margin as needed */
 }
 
 
 .error-screen {
+/* Hiding the error screen at first */
   display: none; 
 }
 
 @media screen and (max-width: 599px) {
+  /* Media query for screens with a width less than or equal to 599px */
   .piano-container {
     display: none;
   }
