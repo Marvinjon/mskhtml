@@ -2,17 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Title for the web page that is displayed in the browser tab -->
   <title>Simple Piano Site</title>
+  <!-- Link to the stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="control-container" id="controls">
         <label for="tune">Tune:</label>
+        <!-- Dropdown for tune selection -->
         <select id="tune">
           <option value="furElise">Für Elise</option>
           <option value="theGodFather">The Godfather</option>
           <option value="sevenNationArmy">Seven Nation Army</option>
         </select>
+        <!--Buttons for play, record and stop. Each button has id, class,
+            source and the alternative text for the image.-->
         <button id="play">
           <img src="material/play.png" alt="play-img" class="image-inside-button">
         </button>
@@ -25,6 +30,9 @@
         </button>
     </div>
     <div class="piano">
+      <!-- This div contains buttons for the piano keys -->
+      <!-- Each key as its own class and paragraph -->
+      <!-- The black keys have a class for changing the font to white -->
       <button class="white-key">C4<br>(a)</button>
       <button class="black-key" id="b1">C#4<br>(w)</button>
       <button class="white-key">D4<br>(s)</button>
@@ -43,6 +51,7 @@
       <button class="black-key" id="b7">D#5<br>(p)</button>
       <button class="white-key">E5<br>(;)</button>
     </div>
+    <!-- This div has a image for an error screen-->
     <div class="error-screen">
       <img src="material/oops.jpg" alt="Error Screen">
       <p>This website requires at least 600px screen width.</p>
