@@ -7,6 +7,7 @@ body {
   /* Styling for the control container */
   color: rgb(0, 0, 0);
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .piano {
@@ -45,6 +46,9 @@ body {
   position: absolute;
   text-align: center;
   color: white; 
+  justify-content: center;
+  display: flex;
+  top: -0%;
 }
 
 /* Positions for each black key */
