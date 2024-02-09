@@ -1,0 +1,125 @@
+body {
+  /* Background color for the whole body */
+  background-color: #ffffff;
+}
+
+.control-container {
+  /* Styling for the control container */
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.piano {
+  /* Styling for the piano container */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.white-key {
+  /* Styling for the white keys */
+  width: 30px;
+  height: 80px;
+  background-color: #FFF;
+  border: 1px solid #e3e3e3;
+  margin-left: -4px;
+  color: black; /* Ensures text color inside white keys */
+  font-size: 7.5px;
+}
+
+/* Change button color when pressed */
+.white-key:active,
+.black-key:active {
+  background-color: gray;
+}
+
+.black-key {
+  /* Styling for the black keys */
+  width: 18px;
+  height: 50px;
+  background-color: black;
+  border: 0.1px solid rgb(77, 70, 70);
+  font-size: 8px;
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  color: white; 
+  justify-content: center;
+  display: flex;
+  top: -0%;
+}
+
+/* Positions for each black key */
+#b1{
+  left: 5.5%
+}  
+#b2{
+  left: 16%
+}
+#b3{
+  left: 36%
+}
+#b4{
+  left: 46%
+}
+#b5{
+  left: 56%
+}
+#b6{
+  left: 76.5%
+}
+#b7{
+  left: 86.5%
+
+}
+
+
+.image-inside-button {
+  /* Styling for the image inside buttons */
+  width: 150%;
+  height: 100%;
+}
+
+#play, #record, #stop {
+  /* Styling for play, record, and stop buttons */
+  width: 20px;
+  height: 20px;
+}
+
+#recordpad {
+  /* Styling for the record label */
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+
+.error-screen {
+/* Hiding the error screen at first */
+  display: none;
+}
+
+@media screen and (max-width: 599px) {
+  body {
+    overflow: hidden;
+  }
+
+  /* Hide all elements except the error screen */
+  body > *:not(.error-screen) {
+    display: none;
+  }
+
+  .error-screen {
+    /* Styling for the error screen when the screen width is less than or equal to 599px */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+  }
+}
+
